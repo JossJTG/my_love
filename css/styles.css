@@ -122,6 +122,22 @@ body {
     font-size: 3rem;
   }
 }
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .carta {
+    max-height: 70vh;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carta {
+    max-height: 65vh;
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+}
 
 /* Fondo de estrellas parpadeantes moradas */
 .fondo-estrellado {
@@ -204,11 +220,15 @@ body {
   max-width: 700px;
   width: 90%;
   animation: aparecer 0.4s ease;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 /* Video dentro del modal */
 .modal-contenido video {
-  width: 100%;
+  width: 100%;        /* ocupa todo el ancho del contenedor */
+  max-height: 80vh;   /* no más alto que el 80% de la altura de la ventana */
+  object-fit: contain; /* mantiene proporción, evita recortes */
   border-radius: 10px;
   margin-top: 15px;
 }
