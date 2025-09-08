@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+  <link rel="stylesheet" href="css/menu-styles.css" />
+</head>
+<body>
+  <div class="fondo-estrellado"></div>
+
+  <h1>🎶 Elige como te sientes en este momento 🥺💜</h1>
+
+  <div class="botones-menu">
+    <div class="boton-menu" data-playlist="triste" onclick="irPlaylist(this)">
+      <div class="texto">Triste</div>
+    </div>
+    <div class="boton-menu" data-playlist="alegre" onclick="irPlaylist(this)">
+      <div class="texto">Alegre</div>
+    </div>
+    <div class="boton-menu" data-playlist="insegura" onclick="irPlaylist(this)">
+      <div class="texto">Insegura</div>
+    </div>
+    <div class="boton-menu" data-playlist="sola" onclick="irPlaylist(this)">
+      <div class="texto">Sola / Te extraño</div>
+    </div>
+    <div class="boton-menu" data-playlist="historias" onclick="irPlaylist(this)">
+      <div class="texto">Nuestros recuerdos </div>
+    </div>
+    <div class="boton-menu" data-playlist="canciones" onclick="irPlaylist(this)">
+      <div class="texto">Canciones que me recuerdan a ti</div>
+    </div>
+    <!-- Más botones si quieres -->
+  </div>
+
+  <button id="volver" onclick="window.location.href='index.html'">Volver a la carta 💌</button>
+
+  <br><br><br><br>
+  <h1>🎶 Es una web solo de audios amor, de a poco ire mejorando 🥺💜</h1>
+  
+  <script>
+    function irPlaylist(elemento) {
+      const playlist = elemento.dataset.playlist;
+      // Vamos a playlist.html con parámetro
+      window.location.href = `playlist.html?playlist=${playlist}`;
+    }
+  </script>
+  
+</body>
+</html>

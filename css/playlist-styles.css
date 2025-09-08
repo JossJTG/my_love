@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: black;
+  font-family: 'Courier New', monospace;
+  color: white;
+  position: relative;
+  overflow-x: hidden;  /* Oculta solo el desborde horizontal */
+  overflow-y: auto;    /* Permite scroll vertical */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  z-index: 20;
+  color: #d099ff;
+  text-shadow: 0 0 10px purple;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fondo-estrellado {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: black;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 0;
+}
+
+.playlist-container {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+  position: relative;
+}
+
+.cancion-item {
+  cursor: pointer;
+  background: #240046;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px purple;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.cancion-item:hover {
+  background: #7a00ff;
+  color: white;
+}
+
+/* Reproductor fijo abajo */
+#reproductor {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
+  border-radius: 12px;
+  outline: none;
+  background: #240046;
+  box-shadow: 0 0 15px purple;
+  z-index: 10;
+}
+
+/* Botón volver */
+#volver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #b366ff, #7a00ff);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 12px purple;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+#volver:hover {
+  background: linear-gradient(135deg, #7a00ff, #4b0099);
+}
+
+/* Estrellas moradas animadas */
+.estrella-flotante {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: purple;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 3px purple;
+  opacity: 0.8;
+  will-change: transform, opacity;
+  animation: parpadeo 3s infinite ease-in-out;
+  animation-delay: var(--delay);
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.2; }
+}

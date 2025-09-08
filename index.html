@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nuestra Historia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="fondo-estrellado"></div> <!-- Fondo negro con estrellas -->
+
+  <audio id="musica" src="audio/sou-favela.mp3" loop></audio> 
+
+  <div class="sobre-contenedor" onclick="abrirSobre()">
+    <div class="sobre">
+      <div class="tapa"></div>
+      <div class="cuerpo">
+        <div class="carta" id="carta">
+          <p id="texto-principal"></p>
+          <p id="firma"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón para abrir el video -->
+<button id="boton-video" onclick="abrirModal()">Ver video 💜</button>
+
+<!-- Ventana flotante (modal) con el video -->
+<div id="miModal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2>🎬 Video especial</h2>
+    <video controls autoplay>
+      <source src="videos/saludo.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+    </video>
+  </div>
+</div>
+
+
+  <button id="boton-siguiente" onclick="window.location.href='menu.html'">Siguiente ❤️</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
