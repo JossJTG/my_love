@@ -26,8 +26,8 @@ const playlists = {
     titulo: "Tranquila, trataré de alegrarte un poquito",
     canciones: [
       { nombre: "Audio 1", src: "audio/triste/triste_1.mp3" },
-      /*{ nombre: "Audio 2", src: "audio/romanticas/triste_2.mp3" },*/
-      /*{ nombre: "Audio 3", src: "audio/romanticas/triste_3.mp3" }*/
+      { nombre: "Audio 2", src: "audio/triste/triste_2.mp3" },
+      { nombre: "Audio 3", src: "audio/triste/triste_3.mp3" }
     ]
   },
   alegre: {
@@ -50,8 +50,8 @@ const playlists = {
     titulo: "Tal vez no estoy a tu lado de forma fisica, pero me tienes en tu mente, en tu corazon y ahora aqui en esta web que la diseñe exclusivamente para ti, para que me sientas cerca de ti 🥰 al menos un poquito 🥺",
     canciones: [
       { nombre: "Audio 1", src: "audio/sola/sola_1.mp3" },
-      /*{ nombre: "Audio 2", src: "audio/sola/sola_2.mp3" },*/
-      /*{ nombre: "Audio 3", src: "audio/sola/sola_3.mp3" }*/
+      { nombre: "Audio 2", src: "audio/sola/sola_2.mp3" },
+      { nombre: "Audio 3", src: "audio/sola/sola_3.mp3" }
     ]
   },
   historias: {
@@ -67,7 +67,7 @@ const playlists = {
     canciones: [
       { nombre: "100 años - HA-ASH", src: "audio/canciones/HA-ASH - 100 Años.mp3" },
       { nombre: "SOU FAVELA", src: "audio/canciones/sou favela.mp3" },
-      /*{ nombre: "Audio 3", src: "audio/canciones/cancion3.mp3" }*/
+      { nombre: "Audio 3", src: "audio/canciones/tu poeta.mp3" }
     ]
   }
 };
