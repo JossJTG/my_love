@@ -41,13 +41,13 @@ const playlists = {
   insegura: {
     titulo: "Lo entiendo pero ante mis ojos y los de Dios tu eres perfecta 😍",
     canciones: [
-      { nombre: "Audio 1", src: "audio/insegura/insegura_1g.mp3" },
-      /*{ nombre: "Audio 2", src: "audio/insegura/insegura_2.mp3" },*/
-      /*{ nombre: "Audio 3", src: "audio/insegura/insegura_3.mp3" }*/
+      { nombre: "Audio 1", src: "audio/insegura/insegura_1.mp3" },
+      { nombre: "Audio 2", src: "audio/insegura/insegura_2.mp3" },
+      { nombre: "Audio 3", src: "audio/insegura/insegura_3.mp3" }
     ]
   },
   sola: {
-    titulo: "Tal vez no estoy a tu lado de forma fisica, pero me tienes en tu mente, en tu corazon y ahora aqui en esta web que la diseñe exclusivamente para ti, para que me sientas cerca de ti 🥰 al menos un poquito 🥺",
+    titulo: "Tal vez no estoy a tu lado fisicamente, pero estoy en tu mente, en tu corazon y ahora aqui en esta web para que me sientas cerca de ti 🥰 al menos un poquito 🥺",
     canciones: [
       { nombre: "Audio 1", src: "audio/sola/sola_1.mp3" },
       { nombre: "Audio 2", src: "audio/sola/sola_2.mp3" },
