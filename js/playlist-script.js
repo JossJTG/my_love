@@ -65,9 +65,9 @@ const playlists = {
   canciones: {
     titulo: "Son algunas canciones que me gustan y me recuerdan a ti mi amor, tal vez te gusten o tal vez no, pero estarán aqui en caso de que no sepas que escuchar",
     canciones: [
-      { nombre: "100 años - HA-ASH", src: "audio/canciones/HA-ASH - 100 Años.mp3" },
+      { nombre: "100 años - HA-ASH", src: "audio/canciones/100 años.mp3" },
       { nombre: "SOU FAVELA", src: "audio/canciones/sou favela.mp3" },
-      { nombre: "Audio 3", src: "audio/canciones/tu poeta.mp3" }
+      { nombre: "TU POETA", src: "audio/canciones/tu poeta.mp3" }
     ]
   }
 };
