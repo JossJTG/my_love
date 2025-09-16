@@ -69,6 +69,14 @@ const playlists = {
       { nombre: "SOU FAVELA", src: "audio/canciones/sou favela.mp3" },
       { nombre: "TU POETA", src: "audio/canciones/tu poeta.mp3" }
     ]
+  },
+  sentimientos: {
+    titulo: "...",
+    canciones: [
+      { nombre: "Audio 1", src: "audio/sentimientos/sentimientos 1.mp3" },
+     /* { nombre: "SOU FAVELA", src: "audio/canciones/sou favela.mp3" },*/
+      /*{ nombre: "TU POETA", src: "audio/canciones/tu poeta.mp3" }*/
+    ]
   }
 };
 
