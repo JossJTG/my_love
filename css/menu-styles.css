@@ -99,6 +99,10 @@ h1 {
   background-image: url('../images/canciones.jpg');
 }
 
+.boton-menu[data-playlist="sentimientos"] {
+  background-image: url('../images/sentimiento.jpg');
+}
+
 /* Botón volver */
 #volver {
   margin-top: 40px;
